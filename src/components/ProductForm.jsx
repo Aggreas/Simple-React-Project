@@ -1,13 +1,5 @@
 import { useState, useRef } from "react";
 
-/*
-Heureusement que internet était la parce que :
--la page rafraichissait automatiquement à chaque fois que j'appuyé sur le bouton, preventDefault() était la solution à ce problème.
--La doc de React très pratique pour le useRef parce que sans elle la question n'était pas réussite
--nettoyer les champs du form était une galère pendant une bonne trentaine de minutes heureusement qu'une bête recherche google apporte la solution,
-"To clear an input field with React, we can set the state that's used as the input value to an empty string.""
-*/
-
 function ProductForm({addProduct}){
     const [formData, setFormData] = useState({
         name: '',
